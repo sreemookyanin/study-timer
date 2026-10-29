@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS studytimer;
+USE studytimer;
+
+CREATE TABLE IF NOT EXISTS sessions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR(20) NOT NULL,
+    seconds INT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
